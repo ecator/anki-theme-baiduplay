@@ -1,1 +1,1 @@
-callback({version:"1.1"})
+callback({version:"1.2"})
