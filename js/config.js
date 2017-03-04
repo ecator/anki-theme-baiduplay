@@ -11,7 +11,7 @@ var config={
 	//日语
 	jp:{
 		words:new Array("暗記","日本語","こんにちは"),
-		phonetic:new Array("あんき","にほんご","こんにちは"),
+		phonetics:new Array("あんき","にほんご","こんにちは"),
 		trans:new Array("背诵","日语","你好")
 	},
 	//德语
