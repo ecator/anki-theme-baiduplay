@@ -16,6 +16,8 @@
 	position: absolute;
 	top: 0px;
 	left: 0px;
+	min-height: 300px;
+	min-width: 300px;
 }
 .word{
 	font-weight: bold;
