@@ -103,6 +103,8 @@ function initialAnki(){
 				AutoPlay.checked=false
 			}
 		}
+	}else{
+		setTimeout(initialAnki,1000)
 	}
 }
 //设置全局变量baiduplay用于卡片正反传值
