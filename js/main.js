@@ -78,29 +78,32 @@ function initialAnki(){
 			}
 			adjuster.appendChild(labelSpd)
 			adjuster.appendChild(spd)
-			//加载自动播放选项框
-			var labelAutoPlay=document.createElement('label')
-			labelAutoPlay.setAttribute('for','AutoPlay')
-			labelAutoPlay.innerText="自动播放"
-			var AutoPlay=document.createElement('input')
-			AutoPlay.setAttribute('type','checkbox')
-			AutoPlay.onchange=function(){
-				if (this.checked) {
+			//加载自动播放选项按钮
+			var AutoPlay=document.createElement('button')
+			AutoPlay.setAttribute('class','noautoplay')
+			AutoPlay.innerText="打开自动播放"
+			AutoPlay.onclick=function(){
+				if (this.innerText=='打开自动播放') {
 					baiduplay.autoplay=true
+					this.innerText='关闭自动播放'
+					AutoPlay.setAttribute('class','autoplay')
 				}else{
 					baiduplay.autoplay=false
+					this.innerText="打开自动播放"
+					AutoPlay.setAttribute('class','noautoplay')
 				}
 			}
-			adjuster.appendChild(labelAutoPlay)
 			adjuster.appendChild(AutoPlay)
 			//所有组件加载完毕，隐藏过度div
 			document.querySelector('.transition').style.display='none'
 			//判断是否自动播放音频
 			if (baiduplay.autoplay) {
-				AutoPlay.checked=true
+				AutoPlay.innerText="关闭自动播放"
+				AutoPlay.setAttribute('class','autoplay')
 				playAudio(audiourl)
 			}else{
-				AutoPlay.checked=false
+				AutoPlay.innerText="打开自动播放"
+				AutoPlay.setAttribute('class','noautoplay')
 			}
 		}
 	}else{

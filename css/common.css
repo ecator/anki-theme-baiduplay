@@ -62,8 +62,31 @@
 .adjuster{
 	text-align:center;
 }
-.adjuster input[type=checkbox]{
-	zoom: 2;
+/*定义自动播放控制按钮样式*/
+.adjuster .noautoplay,.adjuster .autoplay{
+	display: inline-block;
+	border-radius: 15px;
+	padding: 3px 6px;
+	font-size: 12px;
+	background-image: none;
+	font-weight: normal;
+  	line-height: 1.42857143;
+  	margin-bottom: 0px;
+  	text-decoration: none;
+  	color: #fff;
+  	background-color: #5bc0de;
+  	border-color: #46b8da;
+  	border-width: 2px;
+}
+/*自动播放非激活状态*/
+.adjuster .noautoplay{
+	border-style: outset;
+}
+/*自动播放激活状态*/
+.adjuster .autoplay{
+  	border-style: inset;
+  	background-color: #5abbdd;
+  	border-color: #45b7d0;
 }
 /*版本信息*/
 .version{
