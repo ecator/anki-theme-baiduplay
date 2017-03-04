@@ -36,7 +36,7 @@ var config={
 	kor:{
 		words:new Array("한국어","오빠"),
 		phonetics:new Array("",""),
-		trans:new Array("德语","你好")
+		trans:new Array("韩语","你好")
 	},
 	//西班牙语
 	spa:{
