@@ -62,7 +62,7 @@
 .adjuster{
 	text-align:center;
 }
-.mobile .adjuster input[type=checkbox]{
+.adjuster input[type=checkbox]{
 	zoom: 2;
 }
 /*版本信息*/
