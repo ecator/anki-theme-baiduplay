@@ -93,6 +93,9 @@ function initialAnki(){
 			}
 			adjuster.appendChild(labelAutoPlay)
 			adjuster.appendChild(AutoPlay)
+			//所有组件加载完毕，隐藏过度div
+			document.querySelector('.transition').style.display='none'
+			//判断是否自动播放音频
 			if (baiduplay.autoplay) {
 				AutoPlay.checked=true
 				playAudio(audiourl)

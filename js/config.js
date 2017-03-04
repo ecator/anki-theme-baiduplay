@@ -4,7 +4,7 @@
 var config={
 	tpl:{
 		front:"<div onclick=\"window.event.cancelBubble = true\" class=\"word front\">{{word}}</div>",
-		back:"<div class=\"adjuster\"></div><div class=\"word back\" id=\"word\">{{word}}</div><div class=\"phonetic\">{{phonetic}}</div><img id=\"playButton\"><div class=\"trans\">{{trans}}</div>"
+		back:"<div class=\"transition\"></div><div class=\"adjuster\"></div><div class=\"word back\" id=\"word\">{{word}}</div><div class=\"phonetic\">{{phonetic}}</div><img id=\"playButton\"><div class=\"trans\">{{trans}}</div>"
 	},
 	baseUrl:"http://ecator.github.io/anki-theme-basic-baidu-jp-en/",
 	//语言设置
