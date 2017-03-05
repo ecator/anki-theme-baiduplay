@@ -17,29 +17,18 @@ function loadjs(filename){
 }
 //获取script自身baseurl
 function getjsBaseurl(){
-var script=document.getElementsByTagName("script")[document.getElementsByTagName("script").length-1]
-if(script.getAttribute("data-baseurl")){
-	return script.getAttribute("data-baseurl")
+	var script=document.getElementsByTagName("script")[document.getElementsByTagName("script").length-1]
+	if(script.getAttribute("data-baseurl")){
+		return script.getAttribute("data-baseurl")
 
-}else
-{
-	var tmp=script.src.split('/')
+	}else
+	{
+		var tmp=script.src.split('/')
 	// console.log(tmp)
 	tmp.pop()
 	return tmp.join("/")+"/"
+	}
 }
-}
-/*忘head中注册一个全局变量，用于Anki卡片正反面传值
-**name和val值必须要为字符串
-*/
-function regist2Head(name,val){
-	// console.log(window[name])
-	if (window[name]) return
-	var script=document.createElement('script')
-	script.innerHTML="var "+name+"="+val
-	document.head.appendChild(script)
-}
-
 
 //加载依赖模块
 loadjs("playAudio")
@@ -111,5 +100,10 @@ function initialAnki(){
 	}
 }
 //设置全局变量baiduplay用于卡片正反传值
-regist2Head('baiduplay',"{autoplay:false,spd:3}")
+if (typeof(baiduplay)=="undefined") {
+	var baiduplay={
+		autoplay:false,
+		spd:3
+	}
+}
 setTimeout(initialAnki,1000)
