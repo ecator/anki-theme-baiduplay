@@ -1,6 +1,6 @@
 //入口模块
 //检测是否有版本更新
-var lastVersion='2.0'
+var lastVersion='2.0.1'
 if (version!=lastVersion) {
 	if(!document.querySelector(".version")){
 		var div=document.createElement('div')
