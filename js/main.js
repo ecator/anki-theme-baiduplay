@@ -46,7 +46,7 @@ function initialAnki(){
 			//加载音频按钮
 			playbtn.setAttribute('src',getjsBaseurl()+'../img/button/'+language+'.png')
 			var word=document.getElementById('word').innerText
-			var audiourl="http://fanyi.baidu.com/gettts?lan="+language+"&text="+encodeURI(word)+"&source=web"
+			var audiourl="https://fanyi.baidu.com/gettts?lan="+language+"&text="+encodeURI(word)+"&source=web"
 			playbtn.setAttribute('onclick',"playAudio(\""+audiourl+"\")")
 			playbtn.style.display='block'
 			//加载语速调节器
