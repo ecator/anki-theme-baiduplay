@@ -7,7 +7,7 @@ function playAudio(audioSrc){
  	spd=spd?spd.value:'3'
  	audioSrc+="&spd="+spd
  	//判断是否为PC端，PC和移动端的播放方式不一样
- 	if(typeof(py)=="object"){
+ 	if(typeof(pycmd)=="function"){
  		//PC端，需要代码为498789867的插件依赖
  		pycmd("ankiplay"+audioSrc)
 	}else{
