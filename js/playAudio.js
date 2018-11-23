@@ -9,7 +9,7 @@ function playAudio(audioSrc){
  	//判断是否为PC端，PC和移动端的播放方式不一样
  	if(typeof(py)=="object"){
  		//PC端，需要代码为498789867的插件依赖
- 		py.link("ankiplay"+audioSrc)
+ 		pycmd("ankiplay"+audioSrc)
 	}else{
  		//移动端
  		var player=new Audio(audioSrc)
