@@ -1,12 +1,12 @@
 //入口模块
 //检测是否有版本更新
-var lastVersion='2.0.x'
+var lastVersion='2.0.3'
 if (version!=lastVersion) {
 	if(!document.querySelector(".version")){
 		var div=document.createElement('div')
 		div.setAttribute('class',"version")
-		//div.innerHTML="发现新版本"+lastVersion+"(当前版本"+version+")<a href='https://raw.githubusercontent.com/ecator/anki-theme-basic-baidu-jp-en/master/BaiduPlay.apkg'>点我</a>更新"
-		div.innerHTML="发音功能失效，修复日待定。。。"
+		div.innerHTML="发现新版本"+lastVersion+"(当前版本"+version+")<a href='https://raw.githubusercontent.com/ecator/anki-theme-basic-baidu-jp-en/master/BaiduPlay.apkg'>点我</a>更新<br />修复PC端发音还需要安装插件1265623513"
+		//div.innerHTML="发音功能失效，修复日待定。。。"
 		document.body.appendChild(div)
 	}
 }
