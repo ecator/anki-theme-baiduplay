@@ -1,12 +1,10 @@
 # BaiduPlay
 
-Anki百度风格在线发音模板，桌面端需要498789867插件依赖，手机端无需任何依赖。
+Anki百度风格在线发音模板，支持11种语言。
 
 > 本模板采用引入资源的写法，全程依赖网络，所有资源文件均托管在本仓库。
 
 [详细说明传送门](https://zhuanlan.zhihu.com/p/24888978)
-
-> [BaiduBasic-jp-en.apkg](https://raw.githubusercontent.com/ecator/anki-theme-baiduplay/master/BaiduBasic-jp-en.apkg)为1.2老版本，只支持日语和英语，已不再更新，请使用最新的[BaiduPlay.apkg](https://raw.githubusercontent.com/ecator/anki-theme-baiduplay/master/BaiduPlay.apkg)版本，支持11种语言。
 
 # 模板在线预览
 
